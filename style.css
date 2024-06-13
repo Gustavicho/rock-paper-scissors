@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;;
 }
 
 body {
@@ -13,6 +17,17 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+#choice {
+    font-size: 1.5rem;
+    padding: .25em .5em;
+    border-radius: 1em;
+    transition: .3s;
+}
+#choice:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 button {
