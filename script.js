@@ -14,3 +14,7 @@ function getComputerChoice() {
             return "scis"
     }
 }
+
+function getUserChoice() {
+    return userChoice.value
+}
