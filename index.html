@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS game</title>
+    <title>Rock, Paper & Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 class="gradient-heading">Rock, Paper & Scissors game</h1>
+    <h1 class="gradient-heading">Rock, Paper & Scissors</h1>
 
-    <label for="choice">Chose your move!</label>
-    <select id="choice" name="chose">
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scis">Scissors</option>
-    </select>
+    <div class="btns-container">
+        <label for="choice">Chose your move!</label>
+        <select id="choice" name="chose">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scis">Scissors</option>
+        </select>
+        
+        <button>PLAY!</button>
+    </div>
 
-    <button>PLAY!</button>
-
-    <div class="results"></div>
+    <div class="results">Ready??</div>
     <script src="script.js"></script>
 </body>
 </html>
