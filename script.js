@@ -4,25 +4,6 @@ const result = document.querySelector(".results")
 let computer;
 let user;
 
-function getComputerChoice() {
-    let num = Math.floor(Math.random() * 3) + 1;
-
-    switch (num) {
-        case 1:
-            return "rock"
-    
-        case 2:
-            return "paper"
-
-        case 3:
-            return "scis"
-    }
-}
-
-function getUserChoice() {
-    return userChoice.value
-}
-
 document.querySelector("button").addEventListener("click", () => {
     user = getUserChoice();
     computer = getComputerChoice();
@@ -41,3 +22,22 @@ document.querySelector("button").addEventListener("click", () => {
     }
     result.textContent = resultText;
 });
+
+function getComputerChoice() {
+    let num = Math.floor(Math.random() * 3) + 1;
+
+    switch (num) {
+        case 1:
+            return "rock"
+    
+        case 2:
+            return "paper"
+
+        case 3:
+            return "scis"
+    }
+}
+
+function getUserChoice() {
+    return userChoice.value
+}
