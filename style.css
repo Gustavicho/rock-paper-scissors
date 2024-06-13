@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+:root {
+    --clr-1: #6ce9c3;
+    --clr-2: #ff6b7f;
+    --clr-dark: #333;
+    --clr-light: #fffff0;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-    font-family: "Inter", sans-serif;;
+    font-family: "Inter", sans-serif;
 }
 
 body {
     height: 100vh;
-    background: #fffff0;
+    background: var(--clr-light);
 
     display: flex;
     flex-direction: column;
@@ -18,6 +25,15 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
+h1{font-size: 3rem;}
+label{font-size: 2rem;color: var(--clr-dark);}
+
+.gradient-heading {
+background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
+background-clip: text;
+color: transparent;
+}  
 
 #choice {
     font-size: 1.5rem;
@@ -33,13 +49,19 @@ body {
 button {
     padding: .5em 1em;
     background: transparent;
-    border: solid 2px #333;
+    border: solid 2px var(--clr-dark);
     border-radius: 1em;
     transition: .3s;
 }
 button:hover {
     cursor: pointer;
     scale: 1.25;
-    background: #333;
-    color: #fffff0;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+}
+button:active {
+    transition: 0s;
+    scale: 1.25;
+    border: solid 2px var(--clr-1);
+    background: var(--clr-1);
 }
