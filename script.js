@@ -1,11 +1,22 @@
+/* -----  VARIABLES ----- */
 const choicesBtns = document.querySelectorAll(".btn--choice")
 const result = document.querySelector(".results")
+const WIN = 5;
 
-let computer;
-let user;
+let computerChoice;
+let userChoice;
+let userWins = 0;
+let computerWins = 0;
 
+/* ----- ACTUAL CODE ----- */
 choicesBtns.forEach(btn => {
   btn.addEventListener('click', event => {
+    if (computerWins === WIN || userWins === WIN){
+      showWinner();
+      // reset the play
+      userWins = 0;
+      computerWins = 0;
+    }
     playRound(event);
   });
 });
@@ -18,17 +29,28 @@ function playRound(e) {
     paper: "rock"
   };
   let resultText;
-  user = getUserChoice(e);
-  computer = getComputerChoice();
 
-  if (user === computer) {
+  userChoice = getUserChoice(e);
+  computerChoice = getComputerChoice();
+
+  if (userChoice === computerChoice) {
     resultText = "Draw!"
-  } else if (winCondition[user] === computer) {
+  } else if (winCondition[userChoice] === computerChoice) {
+    userWins++;
     resultText = "YOU WIN!!!"
   } else {
+    computerWins++;
     resultText = "The computer wins..."
   }
   result.textContent = resultText;
+}
+
+function showWinner() {
+  if (userWins > computerWins){
+    result.textContent = "YOU'RE THE ABSOLUTE WINNER";
+  } else {
+    result.textContent = "THE MACHINE IS THE ABSOLUTE WINNER";
+  }
 }
 
 function getComputerChoice() {
