@@ -13,6 +13,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+
 }
 
 body {
@@ -27,13 +29,27 @@ body {
 }
 
 /* typograph */
+.title{font-size: 3rem;}
+.subtitle{font-size: 2rem;}
+.btn{font-size: 1.2rem;}
+
 .gradient-text {
   background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
   background-clip: text;
   color: transparent;
 }
 
-/*main*/
+/* main */
 .container {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle{align-self: flex-end;}
+
+/* buttons */
