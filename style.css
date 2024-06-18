@@ -1,72 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 :root {
-    --clr-1: #6ce9c3;
-    --clr-2: #ff6b7f;
-    --clr-dark: #333;
-    --clr-light: #fffff0;
+  --clr-1: #6ce9c3;
+  --clr-2: #ff6b7f;
+  --clr-dark: #333;
+  --clr-light: #fffff0;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: var(--clr-light);
+  height: 100vh;
+  background: var(--clr-light);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 h1{font-size: 3rem;}
 label, .results{font-size: 2rem;color: var(--clr-dark);}
 
 .gradient-heading {
-    background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 .btns-container {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
 }
 
 #choice,
 button {
-    text-align: center;
+  text-align: center;
 
-    font-size: 1.5rem;
-    padding: .25em .5em;
-    border-radius: 1em;
-    transition: .3s;
+  font-size: 1.5rem;
+  padding: .25em .5em;
+  border-radius: 1em;
+  transition: .3s;
 }
 #choice:hover,
 button:hover {
-    cursor: pointer;
-    scale: 1.1;
+  cursor: pointer;
+  scale: 1.1;
 }
 
 button {
-    background: transparent;
-    border: solid 2px var(--clr-dark);
+  background: transparent;
+  border: solid 2px var(--clr-dark);
 }
 button:hover {
-    background: var(--clr-dark);
-    color: var(--clr-light);
+  background: var(--clr-dark);
+  color: var(--clr-light);
 }
 button:active {
-    transition: 0s;
-    scale: 1.1;
-    border: solid 2px var(--clr-1);
-    background: var(--clr-1);
+  transition: 0s;
+  scale: 1.1;
+  border: solid 2px var(--clr-1);
+  background: var(--clr-1);
 }
