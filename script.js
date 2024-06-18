@@ -11,13 +11,14 @@ let computerWins = 0;
 /* ----- ACTUAL CODE ----- */
 choicesBtns.forEach(btn => {
   btn.addEventListener('click', event => {
+    playRound(event);
+    showPts();
     if (computerWins === WIN || userWins === WIN){
       showWinner();
       // reset the play
       userWins = 0;
       computerWins = 0;
     }
-    playRound(event);
   });
 });
 
@@ -51,6 +52,11 @@ function showWinner() {
   } else {
     result.textContent = "THE MACHINE IS THE ABSOLUTE WINNER";
   }
+}
+
+function showPts() {
+  document.querySelector('.user-pts').textContent = userWins;
+  document.querySelector('.comp-pts').textContent = computerWins;
 }
 
 function getComputerChoice() {
