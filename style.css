@@ -7,11 +7,11 @@
   --clr-light: #fffff0;
 }
 
+/* geral */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   font-family: "Inter", sans-serif;
 }
 
@@ -26,47 +26,14 @@ body {
   gap: 1rem;
 }
 
+/* typograph */
 .gradient-text {
   background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
   background-clip: text;
   color: transparent;
 }
 
-h1{font-size: 3rem;}
-label, .results{font-size: 2rem;color: var(--clr-dark);}
-
-.btns-container {
-  display: flex;
-  flex-direction: column;
-  gap: .8rem;
-}
-
-#choice,
-button {
-  text-align: center;
-
-  font-size: 1.5rem;
-  padding: .25em .5em;
-  border-radius: 1em;
-  transition: .3s;
-}
-#choice:hover,
-button:hover {
-  cursor: pointer;
-  scale: 1.1;
-}
-
-button {
-  background: transparent;
-  border: solid 2px var(--clr-dark);
-}
-button:hover {
-  background: var(--clr-dark);
-  color: var(--clr-light);
-}
-button:active {
-  transition: 0s;
-  scale: 1.1;
-  border: solid 2px var(--clr-1);
-  background: var(--clr-1);
+/*main*/
+.container {
+  
 }
