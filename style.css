@@ -13,8 +13,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-
-
 }
 
 body {
@@ -52,4 +50,24 @@ body {
 }
 .subtitle{align-self: flex-end;}
 
+.btns-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /* buttons */
+.btn {
+  padding: .5em 1em;
+  border-radius: 2em;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  border: solid .1em var(--clr-dark);
+  transition: .3s;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
