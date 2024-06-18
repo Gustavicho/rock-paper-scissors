@@ -26,14 +26,14 @@ body {
   gap: 1rem;
 }
 
-h1{font-size: 3rem;}
-label, .results{font-size: 2rem;color: var(--clr-dark);}
-
 .gradient-text {
   background: linear-gradient(45deg, var(--clr-1) 0%, var(--clr-2) 100%);
   background-clip: text;
   color: transparent;
 }
+
+h1{font-size: 3rem;}
+label, .results{font-size: 2rem;color: var(--clr-dark);}
 
 .btns-container {
   display: flex;
